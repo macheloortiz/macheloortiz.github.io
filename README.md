@@ -100,7 +100,7 @@ npm install -g yarn
 git clone https://github.com/{YOUR_USERNAME}/neumorphism.git
 ```
 
-or
+or 
 
 1.2: Create your own repository (using the green `Use this template` button at the top) and then clone the repository
 
@@ -208,3 +208,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 [product-screenshot]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/screenshot.gif
 [github-repo-info]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/github-repo-info.png
+
+Hello from WSL
