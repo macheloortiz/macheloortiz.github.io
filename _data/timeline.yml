@@ -17,45 +17,53 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- title: airbnb
-  title-url: https://example.com/
-  date: Sep 2019 - Present
-  subtitle: Fullstack Developer
+- title: Artil Robotics
+  title-url: https://artilrobotics.com/
+  date: Mar 2021 - Presente
+  subtitle: CEO & Robotics Developer
   tags:
-    - tag: React
-    - tag: Javascript
-    - tag: Ruby
+    - tag: Coordinador de proyectos
+    - tag: Encargado de la presencia en internet
+    - tag: Levantamiento de capital
     - tag: Rails
   timeline-side: right
 
-- title: Google
+- title: Espe
   title-url: https://example.com/
-  date: Mar 2019 - Sep 2019
-  subtitle: Software Engineer as Intern
+  date: Mar 2018 - Jun 2019
+  subtitle: Ayudante de Investigacion
   tags:
-    - tag: Flutter
-    - tag: Dart
-    - tag: Keycloak
+    - tag: Diseño y simulación mecánica y electrónica
+    - tag: Diseño y conducción de experimentos.
+    - tag: Redacción y revisión artículos científicos.
   timeline-side: right
 
-- title: Super University
+- title: BM DIGITAL
   title-url: https://example.com/
-  date: 2017 - 2019
-  subtitle: M.Sc. Computer Science
+  date: Mar 2017 - Abr 2017
+  subtitle: Técnico de Mantenimiento
+  tags:
+    - tag: Servicio Técnico de Computadores
+    - tag: Mantenimiento de Cámaras Fotográficas
+  timeline-side: right
+
+- title: Universidad de las Fuerzas Armadas ESPE
+  title-url: https://example.com/
+  date: 2013 - 2019
+  subtitle: Ing. Mecatronica
   timeline-side: left
 
-- title: Facebook
+- title: Electrónica Mantilla
   title-url: https://example.com/
-  date: Sep 2017 - Mar 2019
-  subtitle: Front-End Developer as Intern
+  date: Jul 2011 - Jun 2012
+  subtitle: Asistente de Mantenimiento
   tags:
-    - tag: React
-    - tag: Node
-    - tag: Javascript
+    - tag: Servicio Técnico de Equipos de Sonido, Microondas, Televisores
+    - tag: Instalación de soportes y equipos multimedia
   timeline-side: right
 
-- title: Super University
+- title: Instituto Tecnológico Superior Docente "Guayaquil"
   title-url: https://example.com/
-  date: 2014 - 2017
-  subtitle: B.A. Computer Science
+  date: 2007 - 2013
+  subtitle: Bachiller Técnico Electrónico
   timeline-side: left

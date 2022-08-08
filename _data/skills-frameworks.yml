@@ -5,29 +5,29 @@
 # - name: Framework
 #   weight: 5
 
-- name: Angular
+- name: Excel
   weight: 5
 
-- name: AngularJS
+- name: Solidworks
   weight: 3
 
-- name: React
+- name: KiCAD
   weight: 4
 
-- name: Node
+- name: Emprendimiento
   weight: 1
 
-- name: Flutter
+- name: Unity
   weight: 2
 
-- name: Express
+- name: Firmware
   weight: 3
 
-- name: Django
+- name: IoT
   weight: 1
 
-- name: Spring
+- name: Robotics
   weight: 2
 
-- name: Rails
+- name: Control
   weight: 4

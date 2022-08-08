@@ -20,23 +20,23 @@
 - name: CSS3
   weight: 3
 
-- name: SASS
+- name: Arduino
   weight: 3
 
 - name: Java
   weight: 1
 
-- name: Dart
+- name: Matlab
   weight: 1
 
-- name: Swift
+- name: Latex
   weight: 1
 
-- name: Kotlin
+- name: C#
   weight: 1
 
 - name: C++
   weight: 2
 
-- name: Ruby
+- name: ROS
   weight: 2
