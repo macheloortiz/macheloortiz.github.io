@@ -34,7 +34,7 @@ show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: About Me
 # about_me_description: This will be displayed under the title.
-about_me_description: Soy Ambateño, tengo 28 años y mi carrera la enfocado en el desarrollo de soluciones  tecnológicas y automatización utilizando Sistemas embebidos, la programación de firmware y la creación de circuitos electrónicos a medida, he realizado publicaciones en revistas indexadas en. Scopus, Springer, IOP Science, ScienceDirect, En 2018 realice la defensa de un paper en Tokio Japon desde entonces desarrolle un especial gusto por la robótica y en mis tiempos libres los dedico al desarrollo de un robot móvil que resuelve laberintos.
+about_me_description: Soy Ambateño, tengo 28 años y mi carrera la enfocado en el desarrollo de soluciones  tecnológicas y automatización utilizando Sistemas embebidos, la programación de firmware y la creación de circuitos electrónicos a medida, he realizado publicaciones en revistas indexadas en. Scopus, Springer, IOP Science, ScienceDirect, En 2018 realice la defensa de un paper en Tokio Japon desde entonces desarrolle un especial gusto por la robótica y en mis tiempos libres los dedico al desarrollo de un robot móvil que resuelve laberintos.<a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>
 
 # SKILLS SECTION
 # show_skills_card:
@@ -50,10 +50,10 @@ skills_title: Skills
 # > setting this to false, will omit the Timeline section
 show_timeline_card: true
 # timeline_title: The will be displayed as the title in the Timeline section
-timeline_title: Education & Experience
+timeline_title: Educación & Experiencia
 # cv_download_link: The link where you host your cv.
 # > e.g. you share your cv on your dropbox, then add the dropbox link here
-cv_download_link: https://example.com/
+cv_download_link: https://www.canva.com/design/DAFIsROsy6s/wO4Is1qlgd_sBPSl_9TZ2A/view?website#2
 
 # PROJECTS SECTION
 # show_projects_card:
