@@ -78,7 +78,7 @@ function browserSyncReload(done) {
 /**
  * Build Jekyll site
  */
-function jekyll(done) {
+async function jekyll(done) {
   return cp
     .spawn(
       'bundle',
