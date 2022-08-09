@@ -13,21 +13,29 @@
 #     - tag: AngularJS
 #     - tag: Node
 
-- name: project X
-  descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
+- name: Karakuri
+  descr: "Robot Movil armable y programable Aprende programación, electrónica y mecánica de manera divertida.Karakuri es apto para principiantes, incluso si aún no sabe programar, solo ensamble Karakuri con piezas cortadas con láser y contrólalo con nuestra aplicación móvil."
+  demo: https://artilrobotics.com/producto/karakuri
+  tags:
+    - tag: ESP32
+    - tag: BLE
+    - tag: PlatformIO
+    - tag: C++
+
+- name: Sumibot
+  descr: "Compañero robótico, el cual acompaña a los niños mientras se divierten y aprenden mecánica, electrónica, programación y desarrollan habilidades cognitivas manteniendo el interés en la metodología STEM. Mediante una APP se controla y programa movimientos para cumplir diferentes retos."
+  demo: https://artilrobotics.com/producto/sumibot
+  tags:
+    - tag: ESP32
+    - tag: Wifi
+    - tag: TFF
+    - tag: C++
+
+- name: MazeSolver
+  descr: "Robot Micromouse ARM Cortex-M4 72 MHz Repositorio de Ejemplos en GitHub"
   demo: https://example.com/
   tags:
-    - tag: MongoDB
-    - tag: Express
-    - tag: AngularJS
-    - tag: Node
-
-- name: project Y
-  descr: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam"
-  demo: https://example.com/
-  tags:
-    - tag: Python
-    - tag: Django
-
-- name: project Z
-  descr: "You can also set a project without demo link and no tags"
+    - tag: Teensy
+    - tag: Bluetooth
+    - tag: PlatformIO
+    - tag: C++

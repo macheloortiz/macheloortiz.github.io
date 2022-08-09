@@ -5,29 +5,20 @@
 # - name: Framework
 #   weight: 5
 
-- name: Excel
+- name: Linux
   weight: 5
 
-- name: Solidworks
+- name: FreeRTOS
   weight: 3
 
-- name: KiCAD
+- name: MicroPython
   weight: 4
 
-- name: Emprendimiento
-  weight: 1
-
-- name: Unity
-  weight: 2
-
-- name: Firmware
+- name: PlatformIO
   weight: 3
 
-- name: IoT
-  weight: 1
-
-- name: Robotics
+- name: Arduino
   weight: 2
 
-- name: Control
-  weight: 4
+- name: Mbed
+  weight: 3
