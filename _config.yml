@@ -84,10 +84,10 @@ os_projects_title: Open Source Projects
 # > setting this to false, will omit the Contact section
 show_contact_card: true
 # contact_title: The will be displayed as the title in the Contact section
-contact_title: Contactos
+contact_title: Ponerse en contacto
 # contact_description: This will be displayed under the title.
 contact_description: (+593) 98 300 4721, <a class="highlight-link" href="https://wa.me/qr/NT4CSOCWTAR4J1" target="_blank" rel="noreferrer"> Whatsapp </a>.
-
+contact_description2: Aunque actualmente no estoy buscando oportunidades independientes, no dude en ponerse en contacto conmigo o seguirme.
 # GITHUB-METADATA
 # Set this to your forked repository
 # > e.g. <user>/<user>.github.io
