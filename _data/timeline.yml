@@ -20,15 +20,14 @@
 - title: Artil Robotics
   title-url: https://artilrobotics.com/
   date: Mar 2021 - Presente
-  subtitle: CEO & Robotics Developer
+  subtitle: Cofunder & CEO
   tags:
     - tag: Coordinador de proyectos
     - tag: Encargado de la presencia en internet
     - tag: Levantamiento de capital
-    - tag: Rails
   timeline-side: right
 
-- title: Espe
+- title: Universidad de las Fuerzas Armadas ESPE
   title-url: https://example.com/
   date: Mar 2018 - Jun 2019
   subtitle: Ayudante de Investigacion
@@ -36,7 +35,7 @@
     - tag: Diseño y simulación mecánica y electrónica
     - tag: Diseño y conducción de experimentos.
     - tag: Redacción y revisión artículos científicos.
-  timeline-side: right
+  timeline-side: left
 
 - title: BM DIGITAL
   title-url: https://example.com/
@@ -48,7 +47,7 @@
   timeline-side: right
 
 - title: Universidad de las Fuerzas Armadas ESPE
-  title-url: https://example.com/
+  title-url: https://drive.google.com/file/d/113GLN2su8dDxPNI3jrynVGc5Qgm6s9FT/view?usp=sharing
   date: 2013 - 2019
   subtitle: Ing. Mecatronica
   timeline-side: left
@@ -63,7 +62,7 @@
   timeline-side: right
 
 - title: Instituto Tecnológico Superior Docente "Guayaquil"
-  title-url: https://example.com/
+  title-url: https://drive.google.com/file/d/1FJmrN3BzfGVPKlkCOwbm46DK3XFRhlgr/view?usp=sharing
   date: 2007 - 2013
   subtitle: Bachiller Técnico Electrónico
   timeline-side: left

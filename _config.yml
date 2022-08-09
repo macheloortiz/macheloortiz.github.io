@@ -14,7 +14,7 @@ baseurl: ""
 username: Marcelo Ortiz
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
-typing_text: Ing Mecatronica
+typing_text: Ingeniero en Mecatronica
 # email: Your E-Mail address for the email button.
 email: macheloortiz@gmail.com
 # For every social button you want to display, set your username or userid
@@ -32,17 +32,21 @@ twitter_username: macheloortiz
 # > setting this to false, will omit the About Me section
 show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
-about_me_title: About Me
+about_me_title: Acerca de mi
 # about_me_description: This will be displayed under the title.
-about_me_description: Soy Ambateño, tengo 28 años y mi carrera la enfocado en el desarrollo de soluciones  tecnológicas y automatización utilizando Sistemas embebidos, la programación de firmware y la creación de circuitos electrónicos a medida, he realizado publicaciones en revistas indexadas en. Scopus, Springer, IOP Science, ScienceDirect, En 2018 realice la defensa de un paper en Tokio Japon desde entonces desarrolle un especial gusto por la robótica y en mis tiempos libres los dedico al desarrollo de un robot móvil que resuelve laberintos.<a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>
-
+about_me_description: 👋 Hola, mi nombre es Marcelo Ortiz de Ambato-Ecuador
+                      👨‍💻 Soy Ing. Mecatronico con un enfoque en el desarrollo de soluciones  tecnológicas y automatización utilizando Sistemas embebidos
+                      💻 Me gusta programar firmware y la creacion de circuitos electronicos.
+                      👥 I have experience working in agile environments and am a convinced advocate of clean code.
+                      🤖 I automate repetitive processes on my computer via bash or python scripting.
+                      📈 I am passionate about investing and I'm planning to share my experiences on a blog later on los dedico al desarrollo de un robot móvil que resuelve laberintos.<a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>
 # SKILLS SECTION
 # show_skills_card:
 # > setting this to true, will display the Skills section
 # > setting this to false, will omit the Skills section
 show_skills_card: true
 # about_me_title: The will be displayed as the title in the Skills section
-skills_title: Skills
+skills_title: Habilidades
 
 # TIMELINE SECTION
 # show_timeline_card:
@@ -81,7 +85,7 @@ show_contact_card: true
 # contact_title: The will be displayed as the title in the Contact section
 contact_title: Contactos
 # contact_description: This will be displayed under the title.
-contact_description: (+593) 0983004721, checkout the source code and the documentation at <a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>.
+contact_description: (+593) 0983004721,<a class="highlight-link" href="https://wa.me/qr/NT4CSOCWTAR4J1" target="_blank" rel="noreferrer"> Whatsapp </a>.
 
 # GITHUB-METADATA
 # Set this to your forked repository
