@@ -35,12 +35,12 @@ show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: Acerca de mi
 # about_me_description: This will be displayed under the title.
-about_me_description0: 👋 Hola, mi nombre es Marcelo Ortiz de Ambato-Ecuador
-about_me_description1: 👨‍💻 Soy Ing. Mecatronico con un enfoque en el desarrollo de soluciones  tecnológicas y automatización utilizando Sistemas embebidos"
-about_me_description2: 💻 Me gusta programar firmware y la creacion de circuitos electronicos.
-about_me_description3: 👥 I have experience working in agile environments and am a convinced advocate of clean code.
-about_me_description4: 🤖 I automate repetitive processes on my computer via bash or python scripting.
-about_me_description5: 📈 I am passionate about investing and I'm planning to share my experiences on a blog later on los dedico al desarrollo de un robot móvil que resuelve laberintos.<a class="highlight-link" href="https://github.com/macheloortiz" target="_blank" rel="noreferrer"> Github </a>
+about_me_description0: 🤖 Yo construyo robots
+about_me_description1: 🦾 Soy Ing. Mecatronico con un enfoque en el desarrollo de soluciones  tecnológicas y automatización con sistemas embebidos
+about_me_description2: 💻 Me gusta diseñar en 3d, programar firmware y la crear circuitos electronicos.
+about_me_description3: 📈 Tengo experiencia liderando proyectos aplicando metodolias agiles.
+about_me_description4: 🧑‍🏫 Me apasiona aprender y planeo compartir mis experiencias en un blog más adelante
+about_me_description5: 🖲️ Mis ratos libres los dedico al desarrollo de un robot móvil que resuelve laberintos.<a class="highlight-link" href="https://github.com/macheloortiz" target="_blank" rel="noreferrer"> Github </a>
 # SKILLS SECTION
 # show_skills_card:
 # > setting this to true, will display the Skills section
