@@ -33,10 +33,23 @@ jobs:
             echo "name=v2.0.0" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Delete stale release/tag pointing to another commit
+        if: github.ref_type != 'tag'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.tag.outputs.name }}
+        run: |
+          CURRENT=$(git ls-remote origin "refs/tags/$TAG" | cut -f1)
+          if [ -n "$CURRENT" ] && [ "$CURRENT" != "$GITHUB_SHA" ]; then
+            gh release delete "$TAG" --yes --repo "$GITHUB_REPOSITORY" || true
+            git push origin ":refs/tags/$TAG" || true
+          fi
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: "${{ steps.tag.outputs.name }}"
+          target_commitish: "${{ github.sha }}"
           name: "${{ steps.tag.outputs.name }} · Portafolio renovado"
           generate_release_notes: true
           body: |
