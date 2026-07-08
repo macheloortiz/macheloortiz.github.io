@@ -33,7 +33,7 @@
 
 - name: MazeSolver
   descr: "Robot Micromouse ARM Cortex-M4 72 MHz Repositorio de Ejemplos en GitHub"
-  demo: https://example.com/
+  demo: https://github.com/macheloortiz
   tags:
     - tag: Teensy
     - tag: Bluetooth

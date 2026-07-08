@@ -2,9 +2,9 @@
 
 # GENERAL SITE SETTINGS
 # title: This will be displayed as the website's name in your browser tab.
-title: Portafolio Marcelo Ortiz
+title: Marcelo Ortiz · Robótica & Automatización
 # description: This will be meta HTML tag content. This can be ignored.
-description: Pagina Web Personal powered by Jekyll
+description: Portafolio de Marcelo Ortiz — Ingeniero en Mecatrónica, Cofundador & CEO de Artil Robotics. Robótica, drones, sistemas embebidos e inteligencia artificial.
 # baseurl: The subpath of your site
 # > set this to "", if you renamed the repository to <user>.github.io
 baseurl: ""
@@ -12,11 +12,14 @@ baseurl: ""
 # LANDING PAGE
 # username: This will displayed on the landing page as your name.
 username: Marcelo Ortiz
-# typing_text: This will be typed before 'scroll down for more'.
-# > set this to your job title, e.g. Fullstack Developer
-typing_text: Ingeniero en Mecatrónica
+# typing_texts: These will be typed before 'scroll down for more'.
+# > set these to your job titles, e.g. Fullstack Developer
+typing_texts:
+  - Ingeniero en Mecatrónica
+  - Cofundador & CEO de Artil Robotics
+  - Robótica · Drones · IA
 # email: Your E-Mail address for the email button.
-email: macheloortiz@gmail.com
+email: marcelo@artilrobotics.com
 # For every social button you want to display, set your username or userid
 # If you do not use one of the following websites, then leave it empty
 # > twitter_username:
@@ -35,12 +38,12 @@ show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: Acerca de mi
 # about_me_description: This will be displayed under the title.
-about_me_description0: 🤖 Yo construyo robots
-about_me_description1: 🦾 Soy Ing. Mecatronico con un enfoque en el desarrollo de soluciones  tecnológicas y automatización con sistemas embebidos
-about_me_description2: 💻 Me gusta diseñar en 3d, programar firmware y la crear circuitos electronicos.
-about_me_description3: 📈 Tengo experiencia liderando proyectos aplicando metodologías agiles.
-about_me_description4: 🧑‍🏫 Me apasiona aprender y planeo compartir mis experiencias en un blog más adelante
-about_me_description5: 🖲️ Mis ratos libres los dedico al desarrollo de un robot móvil que resuelve laberintos.<a class="highlight-link" href="https://github.com/macheloortiz" target="_blank" rel="noreferrer"> Github </a>
+about_me_description0: 🤖 Yo construyo robots. Cofundador & CEO de <a class="highlight-link" href="https://artilrobotics.com" target="_blank" rel="noreferrer">Artil Robotics</a>.
+about_me_description1: 🎓 Ingeniero en Mecatrónica con Maestría en Inteligencia de Negocios y Ciencia de Datos.
+about_me_description2: 🚁 Lidero proyectos de robótica y automatización con drones (PX4, ROS 2), visión artificial, sistemas embebidos y computadores NVIDIA a bordo.
+about_me_description3: 📚 He publicado en revistas indexadas en Scopus, Springer, IOP Science y ScienceDirect.
+about_me_description4: 🏆 Ganador de la fase 1 de la OpenCV Spatial AI Competition (Intel & Microsoft) y alumni del programa Huawei Seeds for the Future.
+about_me_description5: 💰 Experiencia en levantamiento de capital (fundraising) para proyectos tecnológicos. 🖲️ En mis ratos libres desarrollo un robot móvil que resuelve laberintos. <a class="highlight-link" href="https://github.com/macheloortiz" target="_blank" rel="noreferrer">GitHub</a>
 # SKILLS SECTION
 # show_skills_card:
 # > setting this to true, will display the Skills section
@@ -86,8 +89,8 @@ show_contact_card: true
 # contact_title: The will be displayed as the title in the Contact section
 contact_title: Ponerse en contacto
 # contact_description: This will be displayed under the title.
-contact_description: (+593) 98 300 4721, <a class="highlight-link" href="https://wa.me/qr/NT4CSOCWTAR4J1" target="_blank" rel="noreferrer"> Whatsapp </a>.
-contact_description2: Aunque actualmente no estoy buscando oportunidades independientes, no dude en ponerse en contacto conmigo o seguirme.
+contact_description: ¿Tienes un proyecto de robótica, drones o automatización en mente? Escríbeme a <a class="highlight-link" href="mailto:marcelo@artilrobotics.com">marcelo@artilrobotics.com</a>.
+contact_description2: Siempre estoy abierto a nuevas colaboraciones, oportunidades e inversión en tecnología. ¡Conectemos!
 # GITHUB-METADATA
 # Set this to your forked repository
 # > e.g. <user>/<user>.github.io

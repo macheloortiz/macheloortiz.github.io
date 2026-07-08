@@ -5,26 +5,26 @@
 # - name: Language
 #   weight: 5
 
-- name: JavaScript
-  weight: 1
-
-- name: Python
-  weight: 4
-
-- name: Processing
+- name: C++
   weight: 5
 
-- name: Matlab
-  weight: 3
-
-- name: Latex
-  weight: 2
+- name: Python
+  weight: 5
 
 - name: C#
   weight: 4
 
-- name: C++
-  weight: 5
+- name: Matlab
+  weight: 3
 
-- name: ROS
+- name: Processing
+  weight: 4
+
+- name: Latex
+  weight: 2
+
+- name: Bash
+  weight: 3
+
+- name: JavaScript
   weight: 2

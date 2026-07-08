@@ -1,16 +1,14 @@
 <div id="landing">
   <div class="landing-title">
     <div class="photo">
-    <body>
-      <img src = "/assets/img/Marcelo.png" alt = "Marcelo Ortiz" width = "350" height = "350" />
-   </body>
-  </div>
+      <img src="{{ "/assets/img/Marcelo.png" | prepend: site.baseurl }}" alt="Marcelo Ortiz" />
+    </div>
     <h1>Hola, yo soy
       <span class="highlight-title">{{site.username}}</span>,
     </h1>
     <h1>
       <span id="txt-rotate" data-period="2000"
-        data-rotate='["{{site.typing_text}}", "desliza para ver más."]'
+        data-rotate='[{% for text in site.typing_texts %}"{{ text }}", {% endfor %}"desliza para ver más."]'
       >
       </span>
     </h1>

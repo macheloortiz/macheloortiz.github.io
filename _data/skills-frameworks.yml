@@ -5,8 +5,23 @@
 # - name: Framework
 #   weight: 5
 
+- name: ROS 2
+  weight: 5
+
+- name: PX4
+  weight: 4
+
+- name: Isaac Sim
+  weight: 4
+
 - name: Linux
   weight: 5
+
+- name: OpenCV
+  weight: 4
+
+- name: OpenVINO
+  weight: 3
 
 - name: FreeRTOS
   weight: 3
@@ -17,8 +32,11 @@
 - name: PlatformIO
   weight: 3
 
+- name: Webots
+  weight: 3
+
+- name: Gazebo
+  weight: 3
+
 - name: Arduino
   weight: 2
-
-- name: Mbed
-  weight: 3
