@@ -1,0 +1,35 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: "Tag del release (se crea si no existe)"
+        required: false
+        default: "v2.0.0"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: "${{ inputs.tag_name || github.ref_name }}"
+          name: "${{ inputs.tag_name || github.ref_name }} · Portafolio renovado"
+          generate_release_notes: true
+          body: |
+            ## 🚀 Nueva versión de la página
+
+            - ✨ Rediseño moderno: tema oscuro con acentos en gradiente, tarjetas tipo glass y nueva tipografía.
+            - 🤖 Habilidades actualizadas: PX4, ROS 2, Isaac Sim, OpenCV, NVIDIA Jetson, Fundraising y más.
+            - 🗓️ Experiencia actualizada: Artil Robotics (Cofundador & CEO), Aerialoop y Maestría en Inteligencia de Negocios y Ciencia de Datos.
+            - 📫 Contacto simplificado: marcelo@artilrobotics.com (sin número telefónico).

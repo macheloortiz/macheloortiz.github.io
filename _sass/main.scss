@@ -1,48 +1,84 @@
 /* Imports */
 
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
 
 /* Variables */
 
 $small-screen: 48em !default;
 $medium-screen: 62em !default;
 $large-screen: 75em !default;
-$font-family: "Raleway", sans-serif;
-$font-family-numbers: "Josefin Sans", sans-serif;
+$font-family: "Inter", "Segoe UI", sans-serif;
+$font-family-headings: "Space Grotesk", $font-family;
+$font-family-numbers: "Space Grotesk", sans-serif;
 $font-size-base: 1rem !default;
 $font-size-h1: 2rem !default;
 $font-weight-strong: 600;
-$text-color: #fff !default;
-$bg-color: rgba(43, 45, 47, 1);
-$card-bg-color: linear-gradient(
-  145deg,
-  rgba(115, 115, 115, 0.15) 15%,
-  rgba(43, 45, 47, 1) 80%
-);
-$primary-color: rgb(9, 164, 242);
+$text-color: #e8edf7 !default;
+$text-muted: #a3b0c5;
+$bg-color: #0b1017;
+$card-solid: #121826;
+$card-border: rgba(255, 255, 255, 0.08);
+$card-bg-color: rgba(255, 255, 255, 0.03);
+$primary-color: #38bdf8;
+$secondary-color: #8b5cf6;
+$accent-gradient: linear-gradient(135deg, #38bdf8 0%, #8b5cf6 100%);
 
 /* General */
 
 html {
-  background: $bg-color;
+  background: radial-gradient(
+      55rem 40rem at 85% -5%,
+      rgba(139, 92, 246, 0.14),
+      transparent 60%
+    ),
+    radial-gradient(
+      45rem 40rem at -10% 40%,
+      rgba(56, 189, 248, 0.1),
+      transparent 60%
+    ),
+    $bg-color;
+  background-attachment: fixed;
   color: $text-color;
   font-family: $font-family;
   font-size: $font-size-base;
   font-weight: normal;
   height: 100%;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   height: 100%;
 }
 
+::selection {
+  background: rgba(56, 189, 248, 0.35);
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: $bg-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+}
+
 /* Typography */
 
 h1 {
+  font-family: $font-family-headings;
   font-size: $font-size-h1;
   font-weight: $font-weight-strong;
+  letter-spacing: -0.02em;
   line-height: 2rem;
 }
 
@@ -60,8 +96,11 @@ a {
 }
 
 .highlight-title {
+  background: $accent-gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
   color: $primary-color;
-  text-shadow: 0.25rem 0.25rem 0.25rem $primary-color;
+  -webkit-text-fill-color: transparent;
 }
 
 .highlight-link {
@@ -87,18 +126,36 @@ a {
 }
 
 .layout .card {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   background: $card-bg-color;
-  border-radius: 2rem;
+  border: 1px solid $card-border;
+  border-radius: 1.5rem;
   margin: 3rem 0;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
 .layout .card .title {
-  text-align: center;
+  font-family: $font-family-headings;
+  padding-bottom: 1rem;
   position: relative;
+  text-align: center;
+
+  &:after {
+    background: $accent-gradient;
+    border-radius: 999px;
+    bottom: 0;
+    content: "";
+    height: 0.25rem;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 3.5rem;
+  }
 }
 
 .layout .card .subtitle {
+  color: $text-muted;
   text-align: center;
 }
 
@@ -107,33 +164,24 @@ a {
 }
 
 .neumorphism-button {
-  background: linear-gradient(
-    145deg,
-    rgba(100, 100, 105, 0.15) 15%,
-    rgba(33, 33, 33, 0.4) 80%
-  );
-  box-shadow: -4px -3px 2px 0 rgba(250, 250, 250, 0.13),
-    4px 4px 2px 0 rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid $card-border;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
 }
 
 @mixin neumorphism-button-pressed {
-  background: linear-gradient(
-    150deg,
-    rgba(20, 20, 20, 0.4) 10%,
-    rgba(115, 115, 115, 0.15) 80%
-  );
-  box-shadow: 1px 1px 2px 0 rgba(210, 210, 210, 0.4),
-    -1px -1px 2px rgba(0, 0, 0, 0.4), inset 3px 3px 2px 0 rgba(0, 0, 0, 0.4),
-    inset -1px -2px 2px rgba(210, 210, 210, 0.4);
+  background: $accent-gradient;
+  border-color: transparent;
+  box-shadow: 0 4px 18px rgba(56, 189, 248, 0.35);
 }
 
 .neumorphism-card {
-  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 1),
-    inset -2px -2px 4px rgba(99, 99, 99, 1);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid $card-border;
 }
 
 .neumorphism-card-big {
-  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
 }
 
 /* Preloader */
@@ -185,7 +233,7 @@ a {
   }
 
   .load :last-child {
-    background: $primary-color;
+    background: $secondary-color;
   }
 
   @keyframes spin {
@@ -208,8 +256,9 @@ a {
 /* Footer */
 
 .footer {
-  background: $bg-color;
-  color: $text-color;
+  background: transparent;
+  color: $text-muted;
+  font-size: 0.9rem;
   margin: 0.5rem;
   padding: 1rem;
   text-align: center;
@@ -220,7 +269,6 @@ a {
 
   &:hover,
   &:focus {
-    background: $bg-color;
     color: $text-color;
   }
 }
@@ -228,7 +276,7 @@ a {
 /* Landing Page */
 
 #landing {
-  background: $bg-color;
+  background: transparent;
   color: $text-color;
   display: flex;
   height: 100%;
@@ -243,7 +291,19 @@ a {
   padding: 0.5rem;
   position: absolute;
   right: 0;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.photo img {
+  background: $accent-gradient;
+  border-radius: 50%;
+  box-shadow: 0 0 45px rgba(56, 189, 248, 0.3);
+  height: auto;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  padding: 0.25rem;
+  width: clamp(10rem, 28vh, 15rem);
 }
 
 .landing-icons {
@@ -392,15 +452,15 @@ a {
   }
 
   div[skill-type="language"] {
-    color: #1f22dd;
+    color: #7dd3fc;
   }
 
   div[skill-type="framework"] {
-    color: #187edd;
+    color: #a78bfa;
   }
 
   div[skill-type="tool"] {
-    color: #a8f3fe;
+    color: #6ee7b7;
   }
 
   div[skill-weight="1"] {
@@ -449,10 +509,10 @@ a {
   .timeline:before {
     background: linear-gradient(
       to bottom,
-      #f3f3f3 0%,
-      #d5d5d5 8%,
-      #d5d5d5 92%,
-      #f3f3f3 100%
+      transparent 0%,
+      rgba(56, 189, 248, 0.5) 8%,
+      rgba(139, 92, 246, 0.5) 92%,
+      transparent 100%
     );
     content: " ";
     height: 100%;
@@ -468,7 +528,9 @@ a {
   }
 
   .hexagon {
-    background: $primary-color;
+    background: $accent-gradient;
+    border-radius: 999px;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
     height: 0.5rem;
     left: 0;
     margin-left: auto;
@@ -481,23 +543,7 @@ a {
 
   .hexagon:before,
   .hexagon:after {
-    border-left: 2rem solid transparent;
-    border-right: 2rem solid transparent;
-    border-left-width: 0.5rem;
-    border-right-width: 0.5rem;
-    content: "";
-    left: 0;
-    position: absolute;
-  }
-
-  .hexagon:before {
-    border-bottom: 0.25rem solid $primary-color;
-    top: -0.25rem;
-  }
-
-  .hexagon:after {
-    border-top: 0.25rem solid $primary-color;
-    bottom: -0.25rem;
+    display: none;
   }
 
   .flag-wrapper {
@@ -506,7 +552,7 @@ a {
   }
 
   .flag {
-    background: $bg-color;
+    background: $card-solid;
     border-radius: 0.5rem;
     font-weight: $font-weight-strong;
     padding: 0.25rem 0.5rem;
@@ -537,21 +583,23 @@ a {
   }
 
   .time-wrapper {
-    color: $text-color;
+    color: $text-muted;
     display: block;
     line-height: 0.5rem;
     margin-top: 0.3rem;
   }
 
   .time {
-    background: $bg-color;
+    background: $card-solid;
     border-radius: 0.5rem;
     display: inline-block;
+    font-family: $font-family-numbers;
+    font-size: 0.9rem;
     padding: .6rem;
   }
 
   .desc {
-    background: $bg-color;
+    background: $card-solid;
     border-radius: 1rem;
     margin: 1em 0 0 0;
     padding: 0.75em;
@@ -564,7 +612,15 @@ a {
 .project {
   border-radius: 1rem;
   margin: 1rem 0;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease,
+    transform 0.25s ease;
+
+  &:hover {
+    border-color: rgba(56, 189, 248, 0.4);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    transform: translateY(-0.25rem);
+  }
 }
 
 .project .name-link-wrapper {
@@ -578,7 +634,8 @@ a {
 }
 
 .project-desc {
-  line-height: 1rem;
+  color: $text-muted;
+  line-height: 1.5;
 }
 
 .project-stars-forks {
@@ -591,10 +648,14 @@ a {
 }
 
 .tag {
-  border-radius: 0.5rem;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  border-radius: 999px;
+  color: #9ddcf9;
   display: inline-block;
-  margin-bottom: 0.25rem;
-  padding: 0.5rem;
+  font-size: 0.8rem;
+  margin: 0 0.25rem 0.25rem 0;
+  padding: 0.3rem 0.75rem;
 }
 
 /* Contact Card */
@@ -705,16 +766,18 @@ a {
     }
 
     .filter-button {
-      border-radius: 0.5rem;
+      border-radius: 999px;
       cursor: pointer;
       display: unset;
       margin: 0 0.5rem 1rem;
       padding: 0.5rem 0.25rem;
       text-align: center;
+      transition: border-color 0.25s ease, color 0.25s ease;
       width: 21%;
 
       &:hover {
-        letter-spacing: 0.25rem;
+        border-color: rgba(56, 189, 248, 0.5);
+        color: $primary-color;
       }
     }
 
@@ -727,7 +790,7 @@ a {
     }
 
     input[type="radio"]:checked + .filter-button {
-      color: $primary-color;
+      color: #fff;
       font-weight: $font-weight-strong;
       @include neumorphism-button-pressed();
     }
