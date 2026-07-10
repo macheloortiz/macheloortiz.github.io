@@ -3,6 +3,11 @@
   <div class="projects-wrapper">
     {% for project in site.data.projects %}
       <div class="project neumorphism-card" data-aos="zoom-in-down">
+        {% if project.image %}
+          <div class="project-img-wrapper">
+            <img class="project-img" src="{{ project.image | prepend: site.baseurl }}" alt="{{ project.name }}" loading="lazy" />
+          </div>
+        {% endif %}
         <div class="name-link-wrapper">
           <h3>{{project.name}}</h3>
         </div>

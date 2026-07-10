@@ -8,6 +8,8 @@ description: Portafolio de Marcelo Ortiz — Ingeniero en Mecatrónica, Cofundad
 # baseurl: The subpath of your site
 # > set this to "", if you renamed the repository to <user>.github.io
 baseurl: ""
+# url: The base hostname of your site, used for social sharing metadata
+url: "https://macheloortiz.github.io"
 
 # LANDING PAGE
 # username: This will displayed on the landing page as your name.
@@ -36,7 +38,7 @@ instagram_username: macheloortiz
 # > setting this to false, will omit the About Me section
 show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
-about_me_title: Acerca de mi
+about_me_title: 👋 Acerca de mí
 # about_me_description: This will be displayed under the title.
 about_me_description0: 🤖 Yo construyo robots. Cofundador & CEO de <a class="highlight-link" href="https://artilrobotics.com" target="_blank" rel="noreferrer">Artil Robotics</a>.
 about_me_description1: 🎓 Ingeniero en Mecatrónica con Maestría en Inteligencia de Negocios y Ciencia de Datos.
@@ -50,7 +52,7 @@ about_me_description5: 💰 Experiencia en levantamiento de capital (fundraising
 # > setting this to false, will omit the Skills section
 show_skills_card: true
 # about_me_title: The will be displayed as the title in the Skills section
-skills_title: Habilidades
+skills_title: 🛠️ Habilidades
 
 # TIMELINE SECTION
 # show_timeline_card:
@@ -58,7 +60,7 @@ skills_title: Habilidades
 # > setting this to false, will omit the Timeline section
 show_timeline_card: true
 # timeline_title: The will be displayed as the title in the Timeline section
-timeline_title: Educación & Experiencia
+timeline_title: 🎓 Educación & Experiencia
 # cv_download_link: The link where you host your cv.
 # > e.g. you share your cv on your dropbox, then add the dropbox link here
 cv_download_link: https://www.canva.com/design/DAFIsROsy6s/wO4Is1qlgd_sBPSl_9TZ2A/view?website#2
@@ -73,13 +75,13 @@ show_projects_card: true
 # > setting this to false, will omit your listed projects
 show_projects: true
 # projects_title: The will be displayed as the title of your projects
-projects_title: Proyectos
+projects_title: 🤖 Proyectos
 # show_os_projects:
 # > setting this to true, will display your public projects on github
 # > setting this to false, will omit your public projects on github
 show_os_projects: true
 # os_projects_title: The will be displayed as the title of your open source projects
-os_projects_title: Open Source Projects
+os_projects_title: ⚡ Open Source
 
 # CONTACT SECTION
 # show_contact_card:
@@ -87,7 +89,7 @@ os_projects_title: Open Source Projects
 # > setting this to false, will omit the Contact section
 show_contact_card: true
 # contact_title: The will be displayed as the title in the Contact section
-contact_title: Ponerse en contacto
+contact_title: 📬 Ponerse en contacto
 # contact_description: This will be displayed under the title.
 contact_description: ¿Tienes un proyecto de robótica, drones o automatización en mente? Escríbeme a <a class="highlight-link" href="mailto:marcelo@artilrobotics.com">marcelo@artilrobotics.com</a>.
 contact_description2: Siempre estoy abierto a nuevas colaboraciones, oportunidades e inversión en tecnología. ¡Conectemos!

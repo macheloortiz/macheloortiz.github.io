@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="MazeSolver, robot micromouse resolviendo un laberinto">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101828"/>
+      <stop offset="1" stop-color="#0b1017"/>
+    </linearGradient>
+    <linearGradient id="macc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="mglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="480" height="270" fill="url(#mbg)"/>
+  <circle cx="240" cy="135" r="130" fill="url(#mglow)"/>
+  <!-- muros del laberinto -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="4" stroke-linecap="round">
+    <rect x="90" y="35" width="300" height="200" rx="8"/>
+    <path d="M140 35v60"/>
+    <path d="M140 145v90"/>
+    <path d="M190 85v110"/>
+    <path d="M240 35v60"/>
+    <path d="M240 145v50"/>
+    <path d="M290 85v60"/>
+    <path d="M290 195v40"/>
+    <path d="M340 85v110"/>
+    <path d="M140 95h50"/>
+    <path d="M240 145h50"/>
+    <path d="M190 195h50"/>
+    <path d="M290 85h50"/>
+  </g>
+  <!-- ruta solución -->
+  <path d="M115 60 v120 h50 v-90 h50 v80 h50 v-60 h50 v100 h50" fill="none" stroke="url(#macc)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 12"/>
+  <!-- meta -->
+  <g>
+    <rect x="352" y="196" width="26" height="26" rx="4" fill="#0b1017" stroke="#8b5cf6" stroke-width="2"/>
+    <path d="M352 196h13v13h-13zM365 209h13v13h-13z" fill="#8b5cf6" opacity="0.85"/>
+  </g>
+  <!-- micromouse -->
+  <g transform="translate(115 60)">
+    <circle r="17" fill="#121826" stroke="url(#macc)" stroke-width="3"/>
+    <circle r="26" fill="none" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="2"/>
+    <!-- orejas / sensores -->
+    <circle cx="-10" cy="-13" r="5" fill="#38bdf8"/>
+    <circle cx="10" cy="-13" r="5" fill="#8b5cf6"/>
+    <!-- ojos -->
+    <circle cx="-5" cy="-2" r="2.5" fill="#e8edf7"/>
+    <circle cx="5" cy="-2" r="2.5" fill="#e8edf7"/>
+    <!-- nariz -->
+    <circle cx="0" cy="6" r="2.5" fill="#38bdf8"/>
+  </g>
+</svg>

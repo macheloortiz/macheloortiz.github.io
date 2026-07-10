@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="Sumibot, compañero robótico">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101828"/>
+      <stop offset="1" stop-color="#0b1017"/>
+    </linearGradient>
+    <linearGradient id="sacc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <radialGradient id="sglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="480" height="270" fill="url(#sbg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0 45h480M0 90h480M0 135h480M0 180h480M0 225h480"/>
+    <path d="M60 0v270M120 0v270M180 0v270M240 0v270M300 0v270M360 0v270M420 0v270"/>
+  </g>
+  <circle cx="240" cy="140" r="120" fill="url(#sglow)"/>
+  <ellipse cx="240" cy="222" rx="105" ry="9" fill="#000000" opacity="0.35"/>
+  <!-- brazos -->
+  <rect x="128" y="128" width="26" height="52" rx="13" fill="#121826" stroke="url(#sacc)" stroke-width="3"/>
+  <rect x="326" y="128" width="26" height="52" rx="13" fill="#121826" stroke="url(#sacc)" stroke-width="3"/>
+  <!-- cuerpo -->
+  <rect x="158" y="76" width="164" height="130" rx="30" fill="#121826" stroke="url(#sacc)" stroke-width="3"/>
+  <!-- pantalla / cara -->
+  <rect x="176" y="94" width="128" height="72" rx="16" fill="#0b1017" stroke="#38bdf8" stroke-opacity="0.5" stroke-width="2"/>
+  <!-- ojos felices -->
+  <g fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round">
+    <path d="M204 132c4-10 16-10 20 0"/>
+    <path d="M256 132c4-10 16-10 20 0"/>
+  </g>
+  <!-- sonrisa -->
+  <path d="M226 146c6 8 22 8 28 0" fill="none" stroke="#8b5cf6" stroke-width="4" stroke-linecap="round"/>
+  <!-- botones -->
+  <circle cx="216" cy="186" r="6" fill="#38bdf8"/>
+  <circle cx="240" cy="186" r="6" fill="#8b5cf6"/>
+  <circle cx="264" cy="186" r="6" fill="#38bdf8"/>
+  <!-- orugas -->
+  <rect x="170" y="206" width="140" height="18" rx="9" fill="#0b1017" stroke="url(#sacc)" stroke-width="3"/>
+  <circle cx="190" cy="215" r="4" fill="#1d2740"/>
+  <circle cx="215" cy="215" r="4" fill="#1d2740"/>
+  <circle cx="240" cy="215" r="4" fill="#1d2740"/>
+  <circle cx="265" cy="215" r="4" fill="#1d2740"/>
+  <circle cx="290" cy="215" r="4" fill="#1d2740"/>
+  <!-- corazón flotante -->
+  <path d="M368 84c-5-9-18-8-20 2-2 9 9 16 20 24 11-8 22-15 20-24-2-10-15-11-20-2z" fill="#8b5cf6" opacity="0.9"/>
+  <!-- estrella -->
+  <path d="M110 92l4 10 11 1-8 7 2 11-9-6-9 6 2-11-8-7 11-1z" fill="#38bdf8" opacity="0.9"/>
+</svg>
