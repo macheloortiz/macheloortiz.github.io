@@ -16,6 +16,7 @@
 - name: Karakuri
   descr: "Robot Movil armable y programable Aprende programación, electrónica y mecánica de manera divertida.Karakuri es apto para principiantes, incluso si aún no sabe programar, solo ensamble Karakuri con piezas cortadas con láser y contrólalo con nuestra aplicación móvil."
   demo: https://artilrobotics.com/producto/karakuri
+  image: /assets/img/projects/karakuri.svg
   tags:
     - tag: ESP32
     - tag: BLE
@@ -25,6 +26,7 @@
 - name: Sumibot
   descr: "Compañero robótico, el cual acompaña a los niños mientras se divierten y aprenden mecánica, electrónica, programación y desarrollan habilidades cognitivas manteniendo el interés en la metodología STEM. Mediante una APP se controla y programa movimientos para cumplir diferentes retos."
   demo: https://artilrobotics.com/producto/sumibot
+  image: /assets/img/projects/sumibot.svg
   tags:
     - tag: ESP32
     - tag: Wifi
@@ -34,6 +36,7 @@
 - name: MazeSolver
   descr: "Robot Micromouse ARM Cortex-M4 72 MHz Repositorio de Ejemplos en GitHub"
   demo: https://github.com/macheloortiz
+  image: /assets/img/projects/mazesolver.svg
   tags:
     - tag: Teensy
     - tag: Bluetooth

@@ -36,7 +36,18 @@ a:hover{color:#e8edf7}
 .footer{background:rgba(0,0,0,0);color:#a3b0c5;font-size:.9rem;margin:.5rem;padding:1rem;text-align:center}
 .footer a{color:#38bdf8}
 .footer a:hover,.footer a:focus{color:#e8edf7}
-#landing{background:rgba(0,0,0,0);color:#e8edf7;display:flex;height:100%;margin:.5rem;padding:.5rem;text-align:center}
+#landing{background:rgba(0,0,0,0);color:#e8edf7;display:flex;height:100%;margin:.5rem;overflow:hidden;padding:.5rem;position:relative;text-align:center}
+#landing:before,#landing:after{border-radius:50%;content:"";filter:blur(90px);opacity:.3;pointer-events:none;position:absolute}
+#landing:before{animation:blob-float 18s ease-in-out infinite;background:#8b5cf6;height:24rem;right:-6rem;top:-6rem;width:24rem}
+#landing:after{animation:blob-float 22s ease-in-out infinite reverse;background:#38bdf8;bottom:-8rem;height:26rem;left:-8rem;width:26rem}
+@keyframes blob-float{0%,100%{transform:translate(0, 0) scale(1)}
+50%{transform:translate(-3rem, 2rem) scale(1.15)}
+}
+.scroll-indicator{animation:scroll-bounce 2s ease-in-out infinite;bottom:1.5rem;color:#a3b0c5;left:50%;line-height:0;position:absolute;transform:translateX(-50%);z-index:1}
+.scroll-indicator:hover{color:#38bdf8}
+@keyframes scroll-bounce{0%,100%{margin-bottom:0}
+50%{margin-bottom:.75rem}
+}
 .landing-title{left:0;margin:.5rem;padding:.5rem;position:absolute;right:0;top:50%;transform:translateY(-50%)}
 .photo img{background:linear-gradient(135deg, #38bdf8 0%, #8b5cf6 100%);border-radius:50%;box-shadow:0 0 45px rgba(56,189,248,.3);height:auto;margin-bottom:1rem;object-fit:cover;padding:.25rem;width:clamp(10rem,28vh,15rem)}
 .landing-icons{display:flex;justify-content:center}
@@ -94,10 +105,13 @@ to{stroke:#e8edf7;stroke-dasharray:83;stroke-width:.5rem}
 .timeline-wrapper .time-wrapper{color:#a3b0c5;display:block;line-height:.5rem;margin-top:.3rem}
 .timeline-wrapper .time{background:#121826;border-radius:.5rem;display:inline-block;font-family:"Space Grotesk",sans-serif;font-size:.9rem;padding:.6rem}
 .timeline-wrapper .desc{background:#121826;border-radius:1rem;margin:1em 0 0 0;padding:.75em;text-align:center}
-.project{border-radius:1rem;margin:1rem 0;padding:.75rem 1.25rem;transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease}
+.project{border-radius:1rem;box-sizing:border-box;margin:1rem 0;padding:.75rem 1.25rem;transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease}
 .project:hover{border-color:rgba(56,189,248,.4);box-shadow:0 12px 30px rgba(0,0,0,.35);transform:translateY(-0.25rem)}
 .project .name-link-wrapper{display:flex;justify-content:space-between}
 .project .name-link-wrapper .links{font-size:1.5rem;margin:1rem .5rem}
+.project-img-wrapper{border:1px solid hsla(0,0%,100%,.08);border-radius:.75rem;margin:.5rem 0 1rem;overflow:hidden}
+.project-img{display:block;transition:transform .4s ease;width:100%}
+.project:hover .project-img{transform:scale(1.04)}
 .project-desc{color:#a3b0c5;line-height:1.5}
 .project-stars-forks{fill:#e8edf7;font-family:"Space Grotesk",sans-serif}
 .tag-wrapper{margin:1rem 0 0 0}
@@ -122,7 +136,7 @@ to{stroke:#e8edf7;stroke-dasharray:83;stroke-width:.5rem}
 #skills div[skill-weight="3"]{font-size:3rem;line-height:2rem}
 #skills div[skill-weight="4"]{font-size:4rem;line-height:3rem}
 #skills div[skill-weight="5"]{font-size:5rem;line-height:4rem}
-#skills .filter-button{border-radius:999px;cursor:pointer;display:unset;margin:0 .5rem 1rem;padding:.5rem .25rem;text-align:center;transition:border-color .25s ease,color .25s ease;width:21%}
+#skills .filter-button{border-radius:999px;box-sizing:border-box;cursor:pointer;display:unset;margin:0 .5rem 1rem;padding:.5rem .25rem;text-align:center;transition:border-color .25s ease,color .25s ease;width:21%}
 #skills .filter-button:hover{border-color:rgba(56,189,248,.5);color:#38bdf8}
 #skills input[type=radio]:checked+.filter-button{color:#fff;font-weight:600;background:linear-gradient(135deg, #38bdf8 0%, #8b5cf6 100%);border-color:rgba(0,0,0,0);box-shadow:0 4px 18px rgba(56,189,248,.35)}
 #skills input[id=language]:checked~div[skill-type=framework],#skills input[id=language]:checked~div[skill-type=tool]{height:0;margin:0;opacity:0;padding:0;width:0}

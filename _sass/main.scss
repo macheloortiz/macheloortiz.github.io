@@ -281,8 +281,73 @@ a {
   display: flex;
   height: 100%;
   margin: 0.5rem;
+  overflow: hidden;
   padding: 0.5rem;
+  position: relative;
   text-align: center;
+
+  &:before,
+  &:after {
+    border-radius: 50%;
+    content: "";
+    filter: blur(90px);
+    opacity: 0.3;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  &:before {
+    animation: blob-float 18s ease-in-out infinite;
+    background: $secondary-color;
+    height: 24rem;
+    right: -6rem;
+    top: -6rem;
+    width: 24rem;
+  }
+
+  &:after {
+    animation: blob-float 22s ease-in-out infinite reverse;
+    background: $primary-color;
+    bottom: -8rem;
+    height: 26rem;
+    left: -8rem;
+    width: 26rem;
+  }
+}
+
+@keyframes blob-float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-3rem, 2rem) scale(1.15);
+  }
+}
+
+.scroll-indicator {
+  animation: scroll-bounce 2s ease-in-out infinite;
+  bottom: 1.5rem;
+  color: $text-muted;
+  left: 50%;
+  line-height: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+@keyframes scroll-bounce {
+  0%,
+  100% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 0.75rem;
+  }
 }
 
 .landing-title {
@@ -611,6 +676,7 @@ a {
 
 .project {
   border-radius: 1rem;
+  box-sizing: border-box;
   margin: 1rem 0;
   padding: 0.75rem 1.25rem;
   transition: border-color 0.25s ease, box-shadow 0.25s ease,
@@ -631,6 +697,23 @@ a {
 .project .name-link-wrapper .links {
   font-size: 1.5rem;
   margin: 1rem 0.5rem;
+}
+
+.project-img-wrapper {
+  border: 1px solid $card-border;
+  border-radius: 0.75rem;
+  margin: 0.5rem 0 1rem;
+  overflow: hidden;
+}
+
+.project-img {
+  display: block;
+  transition: transform 0.4s ease;
+  width: 100%;
+}
+
+.project:hover .project-img {
+  transform: scale(1.04);
 }
 
 .project-desc {
@@ -767,6 +850,7 @@ a {
 
     .filter-button {
       border-radius: 999px;
+      box-sizing: border-box;
       cursor: pointer;
       display: unset;
       margin: 0 0.5rem 1rem;
